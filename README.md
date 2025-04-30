@@ -55,7 +55,8 @@ Open your browser at: http://localhost:3000
 
 ---
 
-📥 Optional: Import Sample Data
+## 📥 Optional: Import Sample Data
+
 If you want to load original member data into MongoDB:
 
 1. Ensure your .env file in /server has:
@@ -67,7 +68,7 @@ MONGO_URI=mongodb://localhost:27017/teamDB
 
 2. Make sure this file exists:
 
-```bash```
+```bash
 server/data/members.json
 ```
 
