@@ -12,7 +12,7 @@ function App() {
         {/* Styled Navbar with custom gradient */}
         <nav className="w-full flex flex-col sm:flex-row justify-between items-center px-6 py-4 bg-gradient-to-r from-indigo-700 via-indigo-500 to-cyan-500 text-white shadow-md">
           <h1 className="text-xl font-bold flex items-center gap-2 mb-2 sm:mb-0">
-            <span>👥</span> Health Care Management
+            <span>👥</span> Member Management
           </h1>
           <div className="flex gap-6 text-sm font-medium">
             <Link to="/" className="hover:text-cyan-100 flex items-center gap-1">🏠 Home</Link>

@@ -14,7 +14,7 @@ function Home() {
       <div className="relative z-10 text-center p-10 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl shadow-xl max-w-xl">
         <h1 className="text-5xl font-extrabold mb-4">HealthSync Team</h1>
         <p className="text-lg mb-6 text-gray-200">
-          Welcome to the Health Care Team Management Portal.
+          Welcome to the Member Management Portal
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/add">
