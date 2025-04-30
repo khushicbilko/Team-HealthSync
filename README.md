@@ -58,25 +58,27 @@ Open your browser at: http://localhost:3000
 📥 Optional: Import Sample Data
 If you want to load original member data into MongoDB:
 
-Ensure your .env file in /server has:
+1. Ensure your .env file in /server has:
 
 env
-Copy
-Edit
+```bash
 MONGO_URI=mongodb://localhost:27017/teamDB
-Make sure this file exists:
+```
 
-pgsql
-Copy
-Edit
+2. Make sure this file exists:
+
+```bash```
 server/data/members.json
-Run:
+```
 
-bash
-Copy
-Edit
+3. Run:
+
+```bash
+
 cd server
 npm run import-data
+```
+
 This script will:
 
 Delete all existing members
@@ -85,14 +87,13 @@ Import members from members.json
 
 Make sure your server/package.json includes:
 
-json
-Copy
-Edit
+
+```bash
 "scripts": {
   "start": "node index.js",
   "import-data": "node importData.js"
 }
-
+```
 ---
 
 ## 🔌 API Endpoints (Server)
