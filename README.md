@@ -82,9 +82,9 @@ npm run import-data
 
 This script will:
 
-.Delete all existing members
+  -Delete all existing members
 
-.Import members from members.json
+  -Import members from members.json
 
 
 
