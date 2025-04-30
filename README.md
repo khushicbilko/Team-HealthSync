@@ -79,11 +79,14 @@ cd server
 npm run import-data
 ```
 
+
 This script will:
 
 .Delete all existing members
 
 .Import members from members.json
+
+
 
 ### Make sure your server/package.json includes:
 
