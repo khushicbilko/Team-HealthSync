@@ -18,7 +18,15 @@ Team-HealthSync/
 
 ## 🚀 Project Description
 
-Team HealthSync is a centralized platform to add, view, and manage team members. It allows users to enter details like name, roll number, degree, year, email, hobbies, and profile picture. Data is stored in MongoDB and fetched dynamically with real-time rendering.
+This is a centralized web application developed by Team HealthSync that allows users to efficiently add, view, and manage student team members. The platform supports input and display of essential member details such as:
+
+Name, Roll Number, Degree, Year, Email
+
+Hobbies and Profile Picture
+
+Data is stored in MongoDB and dynamically fetched with real-time rendering, ensuring a seamless and interactive user experience.
+
+Designed to simplify team organization and improve collaboration.
 
 ---
 
