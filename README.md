@@ -42,7 +42,7 @@ PORT=5000
 ```
 Then run:
 ```bash
-npm start
+node index.js
 ```
 
 ### 3. Setup the Client
@@ -51,7 +51,47 @@ cd ../client
 npm install
 npm start
 ```
-Open http://localhost:3000 in your browser.
+Open your browser at: http://localhost:3000
+
+---
+
+📥 Optional: Import Sample Data
+If you want to load original member data into MongoDB:
+
+Ensure your .env file in /server has:
+
+env
+Copy
+Edit
+MONGO_URI=mongodb://localhost:27017/teamDB
+Make sure this file exists:
+
+pgsql
+Copy
+Edit
+server/data/members.json
+Run:
+
+bash
+Copy
+Edit
+cd server
+npm run import-data
+This script will:
+
+Delete all existing members
+
+Import members from members.json
+
+Make sure your server/package.json includes:
+
+json
+Copy
+Edit
+"scripts": {
+  "start": "node index.js",
+  "import-data": "node importData.js"
+}
 
 ---
 
@@ -87,7 +127,7 @@ Open http://localhost:3000 in your browser.
    - One for backend:
      ```bash
      cd server
-     npm start
+     node index.js
      ```
    - One for frontend:
      ```bash
