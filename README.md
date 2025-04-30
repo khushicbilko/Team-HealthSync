@@ -1,4 +1,5 @@
-# Team HealthSync – Full Stack Team Member Management System
+# 🧩 Full Stack Team Member Management System  
+By Team HealthSync
 
 A full-stack web application for managing student team member profiles. Built with React.js (frontend), Express.js (backend), and MongoDB (Compass or Atlas).
 
