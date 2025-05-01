@@ -31,6 +31,17 @@ Designed to simplify team organization and improve collaboration.
 
 ---
 
+## ⚙️ Prerequisites
+
+Before running the app, ensure the following are installed:
+
+- [Node.js](https://nodejs.org/) (v16+ recommended)
+- [MongoDB Compass](https://www.mongodb.com/products/compass) **or** a [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) cluster
+- npm (comes with Node.js)
+- Git
+
+---
+
 ## 🔧 Installation Steps
 
 ### 1. Clone the Repository
@@ -44,12 +55,20 @@ cd Team-HealthSync
 cd server
 npm install
 ```
-Create a `.env` file in `/server` with:
+Create a `.env` file in `/server` with either:
+
+### For local MongoDB (Compass):
 ```env
 MONGO_URI=mongodb://localhost:27017/your_database_name
 PORT=5000
 ```
-Then run:
+
+### Or for MongoDB Atlas:
+```env
+MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/your_database_name?retryWrites=true&w=majority
+PORT=5000
+```
+Then run server:
 ```bash
 node index.js
 ```
@@ -60,6 +79,8 @@ cd ../client
 npm install
 npm start
 ```
+### 🧠 Important: Run the server and client in two separate VS Code terminals side-by-side.
+
 Open your browser at: http://localhost:3000
 
 ---
@@ -129,7 +150,6 @@ This script will:
   ```
   node_modules/
   .env
-  uploads/
   ```
 - ✅ `.env` file is excluded from Git
 - ✅ All files committed before deadline
@@ -138,7 +158,7 @@ This script will:
 
 ## ▶️ How to Run the App
 
-1. Open 2 terminal windows:
+1. Open two Vs Code terminal windows:
    - One for backend:
      ```bash
      cd server
