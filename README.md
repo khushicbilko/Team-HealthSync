@@ -152,8 +152,8 @@ This script will:
 ---
 
 ## 👨‍💻 Contributors
-- Medha Srivastava
-- Sanidhya Singh
-- Kakarlapudi Meghana
+- Medha Srivastava(/khushicbilko)
+- Sanidhya Singh(/ssanidhya0407)
+- Kakarlapudi Meghana(/Meghana1708)
 
 ---
