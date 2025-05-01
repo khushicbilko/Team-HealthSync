@@ -68,10 +68,12 @@ Open your browser at: http://localhost:3000
 
 If you want to load original member data into MongoDB:
 
+### Run this before setting up the client and server
+
 ### 1. Ensure your .env file in /server has:
 
 ```bash
-MONGO_URI=mongodb://localhost:27017/teamDB
+MONGO_URI=mongodb://localhost:27017/your_database_name
 ```
 
 ### 2. Make sure this file exists:
