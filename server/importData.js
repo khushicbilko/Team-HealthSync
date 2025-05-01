@@ -1,24 +1,20 @@
 const mongoose = require('mongoose');
 const Member = require('./models/Member');
 const members = require('./data/members.json');
+
+//Load environment variables first!
 require('dotenv').config();
 
-// Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
-.then(async () => {
-  console.log(' MongoDB connected. Starting import...');
-
-  await Member.deleteMany(); // Optional: Clears existing data
-  await Member.insertMany(members);
-
-  console.log(' Member data imported successfully!');
-  process.exit();
-})
-.catch((err) => {
-  console.error('Error during import:', err);
-  process.exit(1);
-});
+// Then use the connection string
+mongoose.connect(process.env.MONGO_URI)
+  .then(async () => {
+    await Member.deleteMany();
+    await Member.insertMany(members);
+    console.log('Data imported successfully!');
+    process.exit();
+  })
+  .catch(err => {
+    console.error('Error during import:', err);
+    process.exit(1);
+  });
 

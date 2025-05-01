@@ -46,7 +46,7 @@ npm install
 ```
 Create a `.env` file in `/server` with:
 ```env
-MONGO_URI=mongodb://localhost:27017/teamDB
+MONGO_URI=mongodb://localhost:27017/your_database_name
 PORT=5000
 ```
 Then run:

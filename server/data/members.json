@@ -1,7 +1,4 @@
 [{
-  "_id": {
-    "$oid": "68123ef69f965191d8f31aab"
-  },
   "name": "Medha Srivastava",
   "rollNumber": "RA2211027010216",
   "year": "Undergraduate - 3rd Year",
@@ -16,9 +13,6 @@
   "__v": 0
 },
 {
-  "_id": {
-    "$oid": "68123f2d9f965191d8f31aaf"
-  },
   "name": "Kakarlapudi Meghana",
   "rollNumber": "RA2211027010224",
   "year": "Undergraduate - 3rd Year",
@@ -33,9 +27,6 @@
   "__v": 0
 },
 {
-  "_id": {
-    "$oid": "68123f689f965191d8f31ab3"
-  },
   "name": "Sanidhya Singh",
   "rollNumber": "RA2211027010223",
   "year": "Undergraduate - 3rd Year",
