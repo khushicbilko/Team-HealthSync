@@ -26,6 +26,3 @@ yarn-error.log*
 # IDE folders (optional but recommended)
 .vscode/
 .idea/
-
-# Uploads (optional if you want to ignore images)
-server/uploads/
