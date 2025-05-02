@@ -7,7 +7,7 @@ function Members() {
   useEffect(() => {
     const fetchMembers = async () => {
       try {
-        const res = await axios.get('http://team-healthsync.onrender.com/api/members');
+        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/members`);
         setMembers(res.data);
       } catch (error) {
         alert('Error fetching members');
@@ -44,7 +44,7 @@ function Members() {
                 <img
                   src={
                     member.image
-                      ? `http://localhost:5000/uploads/${member.image}`
+                      ? `${process.env.REACT_APP_API_BASE_URL}/uploads/${member.image}`
                       : 'https://via.placeholder.com/180'
                   }
                   alt={member.name}

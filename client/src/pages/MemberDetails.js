@@ -9,7 +9,7 @@ function MemberDetails() {
   useEffect(() => {
     const fetchMember = async () => {
       try {
-        const res = await axios.get(`http://team-healthsync.onrender.com/api/members/${id}`);
+        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/members/${id}`);
         setMember(res.data);
       } catch (error) {
         console.error('Error fetching member details:', error);
@@ -36,7 +36,7 @@ function MemberDetails() {
 
       <div className="relative z-10 bg-white text-gray-800 p-8 rounded-xl shadow-md max-w-xl w-full text-center">
         <img
-          src={`http://localhost:5000/uploads/${member.image}`}
+          src={`${process.env.REACT_APP_API_BASE_URL}/uploads/${member.image}`}
           alt={member.name}
           className="w-32 h-32 object-cover rounded-full mx-auto mb-4 border"
         />
