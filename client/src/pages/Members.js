@@ -7,7 +7,7 @@ function Members() {
   useEffect(() => {
     const fetchMembers = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/members');
+        const res = await axios.get('http://team-healthsync.onrender.com/api/members');
         setMembers(res.data);
       } catch (error) {
         alert('Error fetching members');

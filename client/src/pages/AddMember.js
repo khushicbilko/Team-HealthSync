@@ -36,7 +36,7 @@ function AddMember() {
     Object.entries(formData).forEach(([key, value]) => data.append(key, value));
 
     try {
-      await axios.post('http://localhost:5000/api/members', data);
+      axios.post('https://team-healthsync.onrender.com/api/members', ...)
       alert('Member added successfully!');
       navigate('/members');
     } catch (err) {
