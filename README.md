@@ -85,52 +85,6 @@ Open your browser at: http://localhost:3000
 
 ---
 
-## 📥 Optional: Import Sample Data
-
-If you want to load original member data into MongoDB:
-
-### Run this before setting up the client and server
-
-### 1. Ensure your .env file in /server has:
-
-```bash
-MONGO_URI=mongodb://localhost:27017/your_database_name
-```
-
-### 2. Make sure this file exists:
-
-```bash
-server/data/members.json
-```
-
-### 3. Run:
-
-```bash
-
-cd server
-npm run import-data
-```
-
-
-This script will:
-
-  -Delete all existing members
-
-  -Import members from members.json
-
-
-
-### Make sure your server/package.json includes:
-
-
-```bash
-"scripts": {
-  "start": "node index.js",
-  "import-data": "node importData.js"
-}
-```
----
-
 ## 🔌 API Endpoints (Server)
 
 | Method | Route              | Description          |
