@@ -34,15 +34,18 @@ function AddMember() {
     e.preventDefault();
     const data = new FormData();
     Object.entries(formData).forEach(([key, value]) => data.append(key, value));
-
+  
     try {
-      await await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/members`, data);
-      alert('Member added successfully!');
+      const response = await axios.post('https://team-healthsync.onrender.com/api/members', data);
+      console.log('Success:', response.data);  // Check this in devtools console
+      alert('✅ Member added successfully!');
       navigate('/members');
     } catch (err) {
-      alert('Error adding member: ' + err.message);
+      console.error('Error:', err.response?.data || err.message);
+      alert('❌ Error adding member: ' + (err.response?.data?.message || err.message));
     }
   };
+
 
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-blue-900 to-indigo-800 flex items-center justify-center px-4 py-8 overflow-hidden">
