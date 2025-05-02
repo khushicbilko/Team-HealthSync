@@ -38,11 +38,11 @@ function AddMember() {
     try {
       const response = await axios.post('https://team-healthsync.onrender.com/api/members', data);
       console.log('Success:', response.data);  // Check this in devtools console
-      alert('✅ Member added successfully!');
+      alert('Member added successfully!');
       navigate('/members');
     } catch (err) {
       console.error('Error:', err.response?.data || err.message);
-      alert('❌ Error adding member: ' + (err.response?.data?.message || err.message));
+      alert('Error adding member: ' + (err.response?.data?.message || err.message));
     }
   };
 
